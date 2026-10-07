@@ -37,8 +37,52 @@
       margin: 0 0 45px;
     }
 
+    h2 {
+      font-size: 18px;
+      color: #1f6f9f;
+      margin: 0 0 12px;
+    }
+
     a {
       color: #1f6f9f;
+    }
+
+    .cv-label {
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+
+    .download {
+      margin: 0;
+    }
+
+    .cv-section {
+      margin-top: 34px;
+    }
+
+    .entry {
+      margin: 0 0 14px;
+    }
+
+    .entry-title {
+      margin: 0;
+    }
+
+    .subline {
+      margin: 8px 0 0;
+    }
+
+    .job-details {
+      margin: 8px 0 0;
+      padding-left: 22px;
+    }
+
+    .job-details li + li {
+      margin-top: 8px;
+    }
+
+    .skills {
+      margin: 0;
     }
 
     @media (max-width: 800px) {
@@ -65,15 +109,89 @@
 
   <h1>CV</h1>
 
-  <p><strong>Curriculum Vitae</strong></p>
+  <main>
+    <p class="cv-label">Curriculum Vitae</p>
 
-  <p>
-    <a href="https://drive.google.com/file/d/1yl7TObdSADGXhX79Jc4Q43P8pjB5-4GA/view?usp=sharing"
-       target="_blank"
-       rel="noopener noreferrer">
-      Download CV
-    </a>
-  </p>
+    <p class="download">
+      <a href="https://drive.google.com/file/d/1yl7TObdSADGXhX79Jc4Q43P8pjB5-4GA/view?usp=sharing"
+         target="_blank"
+         rel="noopener noreferrer">
+        Download CV
+      </a>
+    </p>
+
+    <section class="cv-section">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <p class="entry-title">
+          <strong>Ph.D. in Economics</strong>, Ca’ Foscari University of Venice — Expected 2027
+        </p>
+        <p class="subline">
+          Dissertation: <em>Essays on Banking Transformation, Bank Leadership, and Executive Careers</em>
+        </p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">
+          <strong>M.A. in Economics</strong>, University of International Business and Economics — 2017
+        </p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">
+          <strong>M.A. in Economics</strong>, Université Paris 1 Panthéon-Sorbonne — 2016
+        </p>
+        <p class="subline">
+          Second year: Empirical and Theoretical Economics, jointly with Paris School of Economics
+        </p>
+      </div>
+
+      <div class="entry">
+        <p class="entry-title">
+          <strong>B.S. in Applied Physics</strong>, minor in Business English, Jimei University — 2013
+        </p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Academic Visits</h2>
+
+      <div class="entry">
+        <p class="entry-title">
+          <strong>Research Visitor</strong>, Halle Institute for Economic Research (IWH), Germany — September–November 2026
+        </p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Professional Experience</h2>
+
+      <div class="entry">
+        <p class="entry-title">
+          <strong>Policy Communication Officer</strong>, Institute of New Structural Economics, Peking University — 2018–2021
+        </p>
+
+        <ul class="job-details">
+          <li>
+            Built and managed the Institute’s research and policy communications, helping communicate New Structural Economics to media and the public during a period of institutional expansion.
+          </li>
+          <li>
+            Coordinated academic and policy events and took primary responsibility for the operational delivery of the Third China International Conference in Macroeconomics (CICM 2021).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Languages &amp; Software</h2>
+
+      <p class="skills">
+        Languages: Chinese (native), English (fluent), French (intermediate)<br>
+        Software: Stata, LaTeX
+      </p>
+    </section>
+  </main>
 
 </body>
 </html>
